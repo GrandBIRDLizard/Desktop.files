@@ -4,7 +4,7 @@
 (
     address: "127.0.0.1:6600",
     password: None,
-    theme: None,
+    theme: Some("theme"),
     cache_dir: None,
     on_song_change: None,
     volume_step: 5,
@@ -19,6 +19,7 @@
     select_current_song_on_change: false,
     browser_song_sort: [Disc, Track, Artist, Title],
     directories_sort: SortFormat(group_by_type: true, reverse: false),
+
     cava: (
         framerate: 60, // default 60
         autosens: true, // default true
@@ -40,7 +41,8 @@
         // this is a list of floating point numbers thats directly passed to cava
         // they are passed in order that they are defined
         eq: []
-    ),  
+    ),
+
     album_art: (
         method: Auto,
         max_size_px: (width: 1200, height: 1200),
@@ -191,6 +193,5 @@
         ),
     ],
 )
-
 
 
