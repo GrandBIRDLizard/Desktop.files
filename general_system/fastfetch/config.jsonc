@@ -1,0 +1,174 @@
+{
+  "$schema": "/home/jmoney/.config/fastfetch/config.jsonc",
+  "logo": {
+    "source": "~/.config/fastfetch/assets/Komib-w.png",
+    "type": "kitty-direct",
+    "padding": {
+    	"top": 1,
+      "left": 6
+    },
+    "width": 30,
+    "height": 30
+  },
+  "display": {
+    "separator": "  "
+  },
+  "modules": [
+    "break",
+    {
+      "type": "custom",
+      "format": "╭─➤ 󱙣 HARDWARE 󱙣 ─────────────────────────────────────────────╮",
+      "outputColor": "38;5;82"
+    },
+    {
+      "type": "custom",
+      "format": "╰─┬───────────────────────────────────────────────────────────╯",
+      "outputColor": "38;5;82"
+    },
+    {
+      "type": "chassis",
+      "outputColor": "38;5;92",
+      "key": "  ├ 󰟒 -",
+      "keyColor": "38;5;34"
+    },
+    {
+      "type": "cpu",
+      "outputColor": "38;5;92",
+      "key": "  ├ 󰻠 -",
+      "keyColor": "38;5;34"
+    },
+    {
+      "type": "gpu",
+      "outputColor": "38;5;92",
+      "key": "  ├ 󰺵 -",
+      "keyColor": "38;5;34"
+    },
+    {
+      "type": "memory",
+      "outputColor": "38;5;92",
+      "key": "  ├  -",
+      "keyColor": "38;5;34"
+    },
+    {
+      "type": "disk",
+      "outputColor": "38;5;92",
+      "key": "  ├  -",
+      "keyColor": "38;5;34"
+    },
+    {
+      "type": "display",
+      "key": "  ├ 󰹑 -",
+      "keyColor": "38;5;34",
+      "outputColor": "38;5;92"
+    },
+    {
+      "type": "custom",
+      "format": "  ╰───────────────────────────────────────────────────────────╯",
+      "outputColor": "38;5;82"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "╭─➤  SOFTWARE  ─────────────────────────────────────────────╮",
+      "outputColor": "38;5;129"
+    },
+    {
+      "type": "custom",
+      "format": "╰─┬───────────────────────────────────────────────────────────╯",
+      "outputColor": "38;5;129"
+    },
+    {
+      "type": "os",
+      "key": "  ├ 󰣇 -",
+      "keyColor": "38;5;92",
+      "outputColor": "38;5;34"
+    },
+    {
+      "type": "kernel",
+      "key": "  ├ 󰚀 -",
+      "keyColor": "38;5;92",
+      "outputColor": "38;5;34"
+    },
+    {
+      "type": "shell",
+      "key": "  ├  -",
+      "keyColor": "38;5;92",
+      "outputColor": "38;5;34"
+    },
+    {
+      "type": "packages",
+      "key": "  ├ 󰮯 -",
+      "keyColor": "38;5;92",
+      "outputColor": "38;5;34"
+    },
+    {
+      "type": "terminal-",
+      "key": "  ├  ",
+      "keyColor": "38;5;92",
+      "outputColor": "38;5;34"
+    },
+    {
+      "type": "wm",
+      "key": "  ├  -",
+      "keyColor": "38;5;92",
+      "outputColor": "38;5;34"
+    },
+    {
+      "type": "custom",
+      "format": "  ╰───────────────────────────────────────────────────────────╯",
+      "outputColor": "38;5;129"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "╭─➤   CUSTOMIZATION  ───────────────────────────────────────╮",
+      "outputColor": "38;5;82"
+    },
+    {
+      "type": "custom",
+      "format": "╰─┬───────────────────────────────────────────────────────────╯",
+      "outputColor": "38;5;82"
+    },
+    {
+      "type": "theme",
+      "key": "  ├  -",
+      "keyColor": "38;5;34",
+      "outputColor": "38;5;92"
+    },
+    {
+      "type": "icons",
+      "key": "  ├  -",
+      "keyColor": "38;5;34",
+      "outputColor": "38;5;92"
+    },
+    {
+      "type": "wmtheme",
+      "key": "  ├  -",
+      "keyColor": "38;5;34",
+      "outputColor": "38;5;92"
+    },
+    {
+      "type": "font",
+      "key": "  ├  -",
+      "keyColor": "38;5;34",
+      "outputColor": "38;5;92"
+    },
+    {
+      "type": "terminalfont",
+      "key": "  ├  -",
+      "keyColor": "38;5;34",
+      "outputColor": "38;5;92"
+    },
+    {
+      "type": "cursor",
+      "key": "  ├ 󰳽 -",
+      "keyColor": "38;5;34",
+      "outputColor": "38;5;92"
+    },
+    {
+      "type": "custom",
+      "format": "  ╰───────────────────────────────────────────────────────────╯",
+      "outputColor": "38;5;82"
+    }
+  ]
+}
