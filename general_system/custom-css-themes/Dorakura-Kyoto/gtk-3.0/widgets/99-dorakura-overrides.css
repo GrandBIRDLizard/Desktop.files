@@ -1,0 +1,41 @@
+/* Dorakura-Kyoto :: semantic accent rebias */
+/* Force Purple identity */
+/* By GrandBIRDLizard */
+
+@define-color dorakura_chrome_bg        #2a2238; /* demo-card style muted deep purple */
+@define-color dorakura_chrome_hover     #342b46;
+@define-color dorakura_menu_bg          #2d2e36; /* neutral charcoal-violet */
+@define-color dorakura_menu_hover       #6f63a8; /* cooler lavender */
+@define-color dorakura_content_bg       #171824; /* dark inky main pane */
+@define-color dorakura_content_alt      #1e2030; /* cards / embedded panes */
+@define-color dorakura_sidebar_bg       #241f32; /* slightly warmer than main */
+@define-color dorakura_border           #47405d;
+@define-color dorakura_highlight        #8a7ad0; /* demo-ish active purple */
+@define-color dorakura_highlight_hover  #9b8be0;
+@define-color dorakura_text             #d7d9e8;
+@define-color dorakura_text_dim         #a8acc2;
+
+/* semantic remap */
+@define-color window_bg_color @dorakura_content_bg;
+@define-color view_bg_color @dorakura_sidebar_bg;
+@define-color card_bg_color @dorakura_content_alt;
+@define-color border_color @dorakura_border;
+
+@define-color theme_bg_color @dorakura_content_bg;
+@define-color theme_base_color @dorakura_content_alt;
+@define-color theme_fg_color @dorakura_text;
+@define-color theme_text_color @dorakura_text;
+@define-color theme_selected_bg_color @dorakura_highlight;
+@define-color theme_selected_fg_color #f6f3ff;
+@define-color theme_unfocused_selected_bg_color #6b5fa7;
+@define-color theme_unfocused_selected_fg_color #f1eeff;
+
+@define-color muted_fg_color @dorakura_text_dim;
+@define-color window_fg_color @dorakura_text;
+@define-color view_fg_color @dorakura_text;
+@define-color heading_fg_color #f0ecff;
+
+/* accent family */
+@define-color accent_color #b29df7;
+@define-color accent_alt #8a7ad0;
+@define-color accent_bright #c9bcff;

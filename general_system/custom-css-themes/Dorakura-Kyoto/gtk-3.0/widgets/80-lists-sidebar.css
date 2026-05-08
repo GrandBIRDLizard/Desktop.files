@@ -1,0 +1,66 @@
+/* Dorakura-Kyoto :: 80-lists-sidebar.css */
+/* Force Purple identity */
+/* By GrandBIRDLizard */
+
+/* Sidebar surfaces only */
+.sidebar,
+sidebar,
+placessidebar,
+stacksidebar,
+.navigation-sidebar,
+.nemo-window .sidebar,
+.nemo-window placessidebar {
+  background-image: none;
+  background-color: @dorakura_chrome_bg;
+  color: @window_fg_color;
+  border-right: 1px solid alpha(@border_color, 0.95);
+}
+
+/* Sidebar rows only */
+.sidebar row,
+placessidebar row,
+stacksidebar row,
+.navigation-sidebar row {
+  background-image: none;
+  background-color: transparent;
+  color: @window_fg_color;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  margin: 2px 4px;
+  padding: 4px 6px;
+}
+
+.sidebar row:hover,
+placessidebar row:hover,
+stacksidebar row:hover,
+.navigation-sidebar row:hover {
+  background-color: @dorakura_chrome_hover;
+  border-color: alpha(@border_color, 0.70);
+}
+
+.sidebar row:selected,
+placessidebar row:selected,
+stacksidebar row:selected,
+.navigation-sidebar row:selected {
+  background-color: @dorakura_highlight;
+  color: @theme_selected_fg_color;
+  border-color: alpha(@accent_color, 0.65);
+}
+
+/* Main content pane ONLY for known file-manager style views */
+.nemo-window .view,
+.nemo-window treeview.view,
+.nemo-window iconview,
+.nemo-window .frame,
+.nemo-window scrolledwindow.frame {
+  background-image: none;
+  background-color: @dorakura_content_bg;
+  color: @theme_text_color;
+}
+
+/*
+ * IMPORTANT:
+ * We intentionally do NOT globally style:
+ *   viewport, list, row, textview, flowbox, flowboxchild, scrolledwindow
+ * Those broad selectors were breaking selection/rename/context interactions.
+ */

@@ -1,0 +1,100 @@
+/* Dorakura-Kyoto :: 20-buttons.css */
+/* Core button surfaces, hover, active, destructive, suggested */
+
+button,
+.button {
+  color: @theme_fg_color;
+  background-image: none;
+  background-color: @theme_base_color;
+  border: 1px solid @border_color;
+  border-radius: 8px;
+  box-shadow: none;
+  text-shadow: none;
+  min-height: 28px;
+  min-width: 16px;
+  padding: 6px 10px;
+  transition: all 120ms ease;
+}
+
+button:hover,
+.button:hover {
+  color: @theme_text_color;
+  background-color: @card_bg_color;
+  border-color: @accent_alt;
+}
+
+button:active,
+button:checked,
+.button:active,
+.button:checked {
+  color: @theme_selected_fg_color;
+  background-color: @theme_selected_bg_color;
+  border-color: @accent_color;
+}
+
+button:disabled,
+.button:disabled,
+.button:insensitive {
+  color: @insensitive_fg_color;
+  background-color: @insensitive_bg_color;
+  border-color: @border_color;
+  box-shadow: none;
+}
+
+button.flat,
+.flat button,
+button.image-button {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 6px;
+}
+
+button.flat:hover,
+.flat button:hover,
+button.image-button:hover {
+  background-color: alpha(@card_bg_color, 0.8);
+  border-color: alpha(@accent_alt, 0.6);
+}
+
+button.suggested-action,
+.suggested-action button {
+  color: @theme_selected_fg_color;
+  background-color: @accent_color;
+  border-color: @accent_alt;
+}
+
+button.suggested-action:hover,
+.suggested-action button:hover {
+  background-color: shade(@accent_color, 1.08);
+  border-color: @accent_bright;
+}
+
+button.destructive-action,
+.destructive-action button {
+  color: @theme_selected_fg_color;
+  background-color: @destructive_color;
+  border-color: shade(@destructive_color, 0.85);
+}
+
+button.destructive-action:hover,
+.destructive-action button:hover {
+  background-color: shade(@destructive_color, 1.06);
+}
+
+stackswitcher button,
+.linked > button,
+.linked > .button {
+  border-radius: 0;
+}
+
+.linked > button:first-child,
+.linked > .button:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.linked > button:last-child,
+.linked > .button:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

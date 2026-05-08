@@ -1,0 +1,129 @@
+/* Dorakura-Kyoto :: 90-app-nemo.css */
+/* Force Purple identity */
+/* By GrandBIRDLizard */
+
+.nemo-window,
+.nemo-window .background {
+  background-image: none;
+  background-color: @dorakura_content_bg;
+  color: @theme_text_color;
+}
+
+/* Menubar strip */
+.nemo-window menubar,
+.nemo-window .menubar {
+  background-image: none;
+  background-color: @dorakura_chrome_bg;
+  color: @window_fg_color;
+  border-bottom: 1px solid alpha(@border_color, 0.85);
+}
+
+/* Toolbar / pathbar */
+.nemo-window toolbar,
+.nemo-window .toolbar,
+.nemo-window .primary-toolbar,
+.nemo-window .path-bar,
+.nemo-window .pathbar {
+  background-image: none;
+  background-color: @dorakura_chrome_bg;
+  color: @window_fg_color;
+  border: none;
+  box-shadow: inset 0 -1px alpha(@border_color, 0.80);
+}
+
+/* Toolbar buttons */
+.nemo-window toolbar button,
+.nemo-window .toolbar button,
+.nemo-window toolbar .button,
+.nemo-window .toolbar .button {
+  background-image: none;
+  background-color: alpha(@dorakura_chrome_hover, 0.55);
+  color: @window_fg_color;
+  border: 1px solid alpha(@border_color, 0.70);
+  border-radius: 6px;
+}
+
+/* Path buttons */
+.nemo-window .path-bar button,
+.nemo-window .pathbar button,
+.nemo-window .path-bar .button,
+.nemo-window .pathbar .button {
+  background-image: none;
+  background-color: alpha(@dorakura_chrome_hover, 0.45);
+  color: @window_fg_color;
+  border: 1px solid alpha(@border_color, 0.70);
+  border-radius: 6px;
+}
+
+.nemo-window .path-bar button:hover,
+.nemo-window .pathbar button:hover,
+.nemo-window .path-bar .button:hover,
+.nemo-window .pathbar .button:hover {
+  background-color: @dorakura_chrome_hover;
+  border-color: alpha(@accent_color, 0.30);
+}
+
+/* Selected/current location crumb */
+.nemo-window .path-bar button:checked,
+.nemo-window .pathbar button:checked,
+.nemo-window .path-bar button:active,
+.nemo-window .pathbar button:active,
+.nemo-window .path-bar .button:checked,
+.nemo-window .pathbar .button:checked,
+.nemo-window .path-bar .button:active,
+.nemo-window .pathbar .button:active {
+  background-color: alpha(@dorakura_highlight, 0.78);
+  color: @theme_selected_fg_color;
+  border-color: alpha(@accent_color, 0.60);
+}
+
+/* Sidebar = muted purple */
+.nemo-window .sidebar,
+.nemo-window placessidebar {
+  background-image: none;
+  background-color: @dorakura_sidebar_bg;
+  color: @window_fg_color;
+  border-right: 1px solid alpha(@border_color, 0.90);
+}
+
+/* Main file view = darker, more TokyoNight */
+.nemo-window .view,
+.nemo-window treeview.view,
+.nemo-window iconview,
+.nemo-window .frame,
+.nemo-window scrolledwindow.frame {
+  background-image: none;
+  background-color: @dorakura_content_bg;
+  color: @theme_text_color;
+}
+
+/* Selected file rows/icons */
+.nemo-window .view:selected,
+.nemo-window treeview:selected,
+.nemo-window treeview.view:selected,
+.nemo-window iconview:selected {
+  background-image: none;
+  background-color: alpha(@dorakura_highlight, 0.82);
+  color: @theme_selected_fg_color;
+}
+
+/* Status/footer */
+.nemo-window .statusbar,
+.nemo-window statusbar,
+.nemo-window .floating-bar,
+.nemo-window .bottom-toolbar {
+  background-image: none;
+  background-color: @dorakura_chrome_bg;
+  color: @window_fg_color;
+  border-top: 1px solid alpha(@border_color, 0.85);
+}
+
+/* Inline entries */
+.nemo-window entry,
+.nemo-window .entry {
+  background-image: none;
+  background-color: @dorakura_content_alt;
+  color: @theme_text_color;
+  border: 1px solid alpha(@border_color, 0.80);
+  border-radius: 6px;
+}

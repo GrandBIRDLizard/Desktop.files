@@ -1,0 +1,129 @@
+Dorakura-Kyoto GTK v1.0 Freeze
+Stable usable build baseline
+By GrandBIRDLizard
+
+========================================
+STATUS
+========================================
+
+This is the first stable usable GTK3 build of Dorakura-Kyoto.
+
+Theme direction:
+- Muted but strong
+- Rounded-but-boxy
+- TokyoNight + Dracula inspired
+- Purple-forward identity without over-magenta drift
+- Designed primarily around X11 i3 daily-driver usage
+
+This freeze exists so future polish passes can be done safely
+without losing the first stable working baseline.
+
+========================================
+WHAT IS WORKING
+========================================
+
+- GTK3 theme applies cleanly from ~/.local/share/themes/Dorakura-Kyoto
+- Nemo main window themed and usable
+- Nemo plugin/config panes no longer black
+- Generic GTK dialog/popup surfaces mostly fixed
+- GNOME Screenshot window surfaces themed
+- Firefox and many GTK3 apps render acceptably under GTK_THEME
+- Surface hierarchy now coherent:
+  - chrome/header/footer = muted deep purple
+  - sidebar = separate muted purple surface
+  - content pane = darker inky main surface
+  - menus/popups = neutral charcoal-violet
+- Purple folder/icon direction established
+
+========================================
+KNOWN REMAINING POLISH
+========================================
+
+- Final notebook/tab polish (60-notebook.css)
+- Final controls polish (70-controls.css)
+- Optional app-specific GTK3 tweaks if edge cases appear
+- GTK4 bridge not started / not finalized
+- Public packaging / release cleanup not finalized
+- Editor themes (Vim/Neovim, JetBrains, VSCode) planned later
+
+========================================
+IMPORTANT FILES
+========================================
+
+Core theme files:
+- gtk-3.0/gtk.css
+- gtk-3.0/gtk-dark.css
+- gtk-3.0/widgets/00-palette.css
+- gtk-3.0/widgets/10-base-surfaces.css
+- gtk-3.0/widgets/20-buttons.css
+- gtk-3.0/widgets/30-entries.css
+- gtk-3.0/widgets/40-headerbar.css
+- gtk-3.0/widgets/50-menus.css
+- gtk-3.0/widgets/60-notebook.css
+- gtk-3.0/widgets/70-controls.css
+- gtk-3.0/widgets/80-lists-sidebar.css
+- gtk-3.0/widgets/90-app-nemo.css
+- gtk-3.0/widgets/95-popovers.css
+- gtk-3.0/widgets/99-dorakura-overrides.css
+
+GTK2:
+- gtk-2.0/gtkrc
+- gtk-2.0/colors.rc
+
+Theme metadata:
+- index.theme
+- color.ini
+
+========================================
+IMPORT ORDER (GTK3)
+========================================
+
+Recommended import order in gtk-3.0/gtk.css:
+
+@import url("widgets/00-palette.css");
+@import url("widgets/99-dorakura-overrides.css");
+@import url("widgets/10-base-surfaces.css");
+@import url("widgets/20-buttons.css");
+@import url("widgets/30-entries.css");
+@import url("widgets/40-headerbar.css");
+@import url("widgets/50-menus.css");
+@import url("widgets/60-notebook.css");
+@import url("widgets/70-controls.css");
+@import url("widgets/80-lists-sidebar.css");
+@import url("widgets/90-app-nemo.css");
+@import url("widgets/95-popovers.css");
+
+========================================
+PALETTE / IDENTITY NOTES
+========================================
+
+Current identity target:
+- Deep muted purple chrome
+- Inky dark main pane
+- Cooler lavender highlight
+- Avoid pink/magenta drift
+- Avoid overly blue TokyoNight drift
+- Keep “TokyoNight + Dracula” feel, not pure violet wash
+
+========================================
+NEXT PLANNED MILESTONES
+========================================
+
+1. Final GTK3 polish pass
+   - 60-notebook.css
+   - 70-controls.css
+
+2. Theme pack cleanup
+   - repo structure
+   - generated vs source separation
+   - releaseable packaging
+
+3. Editor themes
+   - Vim / Neovim
+   - VSCode
+   - JetBrains
+
+4. Longer term
+   - GTK4 bridge
+   - C-side / sidecar generator direction
+   - palette-driven multi-target theming pipeline

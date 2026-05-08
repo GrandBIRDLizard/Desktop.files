@@ -1,0 +1,66 @@
+/* Dorakura-Kyoto :: 30-entries.css */
+/* Text entry fields, search bars, spin buttons, editable surfaces */
+
+entry,
+textview,
+.view text,
+spinbutton,
+spinbutton entry,
+searchbar entry,
+.search-bar entry {
+  color: @theme_text_color;
+  caret-color: @accent_color;
+  background-image: none;
+  background-color: @view_bg_color;
+  border: 1px solid @border_color;
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 6px 8px;
+  selection-background-color: @theme_selected_bg_color;
+  selection-color: @theme_selected_fg_color;
+}
+
+entry:focus,
+textview:focus,
+spinbutton:focus,
+spinbutton entry:focus,
+searchbar entry:focus,
+.search-bar entry:focus {
+  border-color: @accent_color;
+  box-shadow: inset 0 0 0 1px alpha(@accent_color, 0.25);
+}
+
+entry:hover,
+spinbutton:hover,
+spinbutton entry:hover {
+  border-color: @accent_alt;
+}
+
+entry:disabled,
+entry:insensitive,
+textview:disabled,
+textview:insensitive,
+spinbutton:disabled,
+spinbutton:insensitive {
+  color: @insensitive_fg_color;
+  background-color: @insensitive_base_color;
+  border-color: @border_color;
+}
+
+entry image,
+spinbutton image {
+  color: @muted_fg_color;
+}
+
+entry selection,
+textview text selection {
+  background-color: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
+}
+
+spinbutton button {
+  min-width: 22px;
+  min-height: 22px;
+  padding: 0;
+  border-radius: 6px;
+}

@@ -1,0 +1,78 @@
+/* Dorakura-Kyoto :: 70-controls.css */
+/* GTK3 switches, checks, radios, sliders, progress */
+
+check,
+radio {
+  color: @theme_fg_color;
+}
+
+check:hover,
+radio:hover {
+  color: @theme_text_color;
+}
+
+check:disabled,
+radio:disabled {
+  color: @insensitive_fg_color;
+}
+
+check check,
+radio radio {
+  background-image: none;
+  background-color: @view_bg_color;
+  border: 1px solid @border_color;
+  border-radius: 4px;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+check check:checked,
+radio radio:checked {
+  background-image: none;
+  background-color: @accent_color;
+  border-color: @accent_alt;
+}
+
+switch {
+  background-image: none;
+  background-color: @insensitive_bg_color;
+  border: 1px solid @border_color;
+  border-radius: 999px;
+  min-width: 44px;
+  min-height: 24px;
+}
+
+switch:checked {
+  background-color: @accent_color;
+  border-color: @accent_alt;
+}
+
+switch slider {
+  background-image: none;
+  background-color: @base07;
+  border: 1px solid alpha(@base00, 0.25);
+  border-radius: 999px;
+  min-width: 18px;
+  min-height: 18px;
+}
+
+scale trough,
+progressbar trough,
+levelbar trough block {
+  background-image: none;
+  background-color: @insensitive_bg_color;
+  border: 1px solid @border_color;
+  border-radius: 999px;
+}
+
+scale highlight,
+progressbar progress,
+levelbar block.filled {
+  background-image: none;
+  background-color: @accent_color;
+  border-radius: 999px;
+}
+
+progressbar text {
+  color: @theme_text_color;
+}

@@ -1,0 +1,129 @@
+/* Dorakura-Kyoto :: 10-base-surfaces.css */
+/* Force Purple identity */
+/* By GrandBIRDLizard */
+
+/* Core application backgrounds */
+window.background,
+window,
+.background,
+.dialog-background,
+dialog.background,
+messagedialog.background {
+  background-image: none;
+  background-color: @dorakura_content_bg;
+  color: @theme_text_color;
+}
+
+/* Common dialog content boxes */
+dialog box,
+dialog .dialog-vbox,
+box.dialog-vbox,
+messagedialog box,
+messagedialog .dialog-vbox {
+  background-image: none;
+  background-color: @dorakura_content_bg;
+  color: @theme_text_color;
+}
+
+/* Generic containers that frequently go black */
+box,
+grid,
+fixed,
+overlay,
+revealer,
+stack,
+stack > box,
+notebook > stack,
+notebook > header + stack {
+  color: @theme_text_color;
+}
+
+/* Embedded panes / panels */
+frame,
+.frame,
+scrolledwindow,
+scrolledwindow.frame,
+viewport,
+viewport.frame {
+  background-image: none;
+  background-color: @dorakura_content_alt;
+  color: @theme_text_color;
+  border-color: alpha(@border_color, 0.70);
+}
+
+/* Tree/list/icon content areas */
+treeview.view,
+treeview,
+.view,
+iconview,
+textview,
+textview text,
+list,
+list row {
+  background-image: none;
+  color: @theme_text_color;
+}
+
+/* Safer content defaults */
+treeview.view,
+.view,
+iconview,
+list,
+list row {
+  background-color: @dorakura_content_bg;
+}
+
+/* Text widgets need slightly lifted base */
+textview,
+textview text,
+entry,
+.entry {
+  background-image: none;
+  background-color: @dorakura_content_alt;
+  color: @theme_text_color;
+  caret-color: @theme_text_color;
+}
+
+/* Notebook pages (huge source of black) */
+notebook,
+notebook > stack,
+notebook > header + stack,
+notebook > box,
+notebook frame {
+  background-image: none;
+  background-color: @dorakura_content_bg;
+  color: @theme_text_color;
+}
+
+/* Pane splitters */
+paned > separator {
+  background-image: none;
+  background-color: alpha(@border_color, 0.65);
+  min-width: 1px;
+  min-height: 1px;
+}
+
+/* Generic separators */
+separator {
+  background-color: alpha(@border_color, 0.60);
+}
+
+/* Selection */
+.view:selected,
+treeview.view:selected,
+iconview:selected,
+list row:selected {
+  background-image: none;
+  background-color: alpha(@dorakura_highlight, 0.82);
+  color: @theme_selected_fg_color;
+}
+
+/* Selected text */
+selection,
+*:selected,
+label selection,
+entry selection,
+textview text selection {
+  background-color: alpha(@dorakura_highlight, 0.85);
+  color: @theme_selected_fg_color;
+}

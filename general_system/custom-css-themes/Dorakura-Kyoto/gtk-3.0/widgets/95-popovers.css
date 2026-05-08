@@ -1,0 +1,114 @@
+/* Dorakura-Kyoto :: 95-popovers.css */
+/* Force Purple identity */
+/* By GrandBIRDLizard */
+
+/* Popovers / popup surfaces / transient windows */
+popover.background,
+popover,
+.background.popup,
+.window-frame.popup,
+window.popup,
+menu,
+.menu {
+  background-image: none;
+  background-color: @dorakura_menu_bg;
+  color: @window_fg_color;
+  border: 1px solid alpha(@border_color, 0.85);
+  box-shadow: none;
+}
+
+/* Dialogs should use content alt, not menu bg */
+dialog.background,
+messagedialog.background,
+dialog,
+messagedialog {
+  background-image: none;
+  background-color: @dorakura_content_alt;
+  color: @window_fg_color;
+  border: 1px solid alpha(@border_color, 0.80);
+}
+
+/* Popover/dialog internals */
+popover box,
+dialog box,
+messagedialog box,
+popover viewport,
+dialog viewport,
+messagedialog viewport,
+popover scrolledwindow,
+dialog scrolledwindow,
+messagedialog scrolledwindow {
+  background-image: none;
+  background-color: transparent;
+  color: @window_fg_color;
+}
+
+/* Menu items */
+menuitem,
+.menuitem {
+  background-image: none;
+  background-color: transparent;
+  color: @window_fg_color;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+menuitem:hover,
+menuitem:prelight,
+.menuitem:hover,
+.menuitem:prelight {
+  background-image: none;
+  background-color: @dorakura_menu_hover;
+  color: #f8f6ff;
+  border-color: alpha(@accent_color, 0.25);
+}
+
+/* Modelbuttons inside GTK popovers */
+modelbutton {
+  background-image: none;
+  background-color: transparent;
+  color: @window_fg_color;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+modelbutton:hover {
+  background-color: alpha(@dorakura_highlight, 0.18);
+  color: @window_fg_color;
+  border-color: alpha(@border_color, 0.45);
+}
+
+modelbutton:checked,
+modelbutton:active {
+  background-color: alpha(@dorakura_highlight, 0.78);
+  color: @theme_selected_fg_color;
+}
+
+/* Buttons inside popups/dialogs */
+popover button,
+dialog button,
+messagedialog button {
+  background-image: none;
+  background-color: alpha(@dorakura_chrome_hover, 0.55);
+  color: @window_fg_color;
+  border: 1px solid alpha(@border_color, 0.70);
+  border-radius: 6px;
+}
+
+popover button:hover,
+dialog button:hover,
+messagedialog button:hover {
+  background-color: @dorakura_chrome_hover;
+  border-color: alpha(@accent_color, 0.35);
+}
+
+popover button:active,
+popover button:checked,
+dialog button:active,
+dialog button:checked,
+messagedialog button:active,
+messagedialog button:checked {
+  background-color: alpha(@dorakura_highlight, 0.78);
+  color: @theme_selected_fg_color;
+  border-color: alpha(@accent_color, 0.60);
+}

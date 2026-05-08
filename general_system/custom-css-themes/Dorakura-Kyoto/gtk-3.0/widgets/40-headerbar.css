@@ -1,0 +1,132 @@
+/* Dorakura-Kyoto :: 40-headerbar.css */
+/* Force Purple identity */
+/* By GrandBIRDLizard */
+
+headerbar,
+.titlebar,
+headerbar.titlebar,
+toolbar,
+.toolbar,
+.primary-toolbar,
+.inline-toolbar,
+.path-bar,
+.pathbar,
+linked.path-bar,
+linked.pathbar {
+  background-image: none;
+  background-color: @dorakura_chrome_bg;
+  color: @window_fg_color;
+  border: none;
+  border-bottom: 1px solid alpha(@border_color, 0.90);
+  box-shadow: none;
+}
+
+headerbar:backdrop,
+.titlebar:backdrop,
+toolbar:backdrop,
+.toolbar:backdrop {
+  background-color: shade(@dorakura_chrome_bg, 0.96);
+  color: @muted_fg_color;
+  border-bottom-color: alpha(@border_color, 0.75);
+}
+
+/* Toolbar buttons: restore clear affordance */
+headerbar button,
+.titlebar button,
+toolbar button,
+.toolbar button,
+headerbar .button,
+.titlebar .button,
+toolbar .button,
+.toolbar .button {
+  background-image: none;
+  background-color: alpha(@dorakura_chrome_hover, 0.55);
+  color: @window_fg_color;
+  border: 1px solid alpha(@border_color, 0.70);
+  border-radius: 6px;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+headerbar button:hover,
+.titlebar button:hover,
+toolbar button:hover,
+.toolbar button:hover,
+headerbar .button:hover,
+.titlebar .button:hover,
+toolbar .button:hover,
+.toolbar .button:hover {
+  background-color: @dorakura_chrome_hover;
+  border-color: alpha(@accent_color, 0.35);
+}
+
+headerbar button:active,
+headerbar button:checked,
+.titlebar button:active,
+.titlebar button:checked,
+toolbar button:active,
+toolbar button:checked,
+.toolbar button:active,
+.toolbar button:checked,
+headerbar .button:active,
+headerbar .button:checked,
+.titlebar .button:active,
+.titlebar .button:checked,
+toolbar .button:active,
+.toolbar .button:checked,
+.toolbar .button:active,
+headerbar .button:checked {
+  background-color: alpha(@dorakura_highlight, 0.78);
+  color: @theme_selected_fg_color;
+  border-color: alpha(@accent_color, 0.65);
+}
+
+/* Pathbar buttons should be calmer than selected tab */
+.path-bar button,
+.pathbar button,
+.path-bar .button,
+.pathbar .button {
+  background-image: none;
+  background-color: alpha(@dorakura_chrome_hover, 0.45);
+  border-radius: 6px;
+  border: 1px solid alpha(@border_color, 0.70);
+  margin: 0 2px;
+}
+
+.path-bar button:hover,
+.pathbar button:hover,
+.path-bar .button:hover,
+.pathbar .button:hover {
+  background-color: @dorakura_chrome_hover;
+  border-color: alpha(@accent_color, 0.35);
+}
+
+.path-bar button:checked,
+.pathbar button:checked,
+.path-bar button:active,
+.pathbar button:active,
+.path-bar .button:checked,
+.pathbar .button:checked,
+.path-bar .button:active,
+.pathbar .button:active {
+  background-color: alpha(@dorakura_highlight, 0.72);
+  color: @theme_selected_fg_color;
+  border-color: alpha(@accent_color, 0.65);
+}
+
+/* Infobar/footer */
+statusbar,
+.statusbar,
+.bottom-toolbar,
+.infobar,
+.info,
+NemoStatusbar,
+.nemo-window .statusbar,
+.nemo-window statusbar {
+  background-image: none;
+  background-color: @dorakura_chrome_bg;
+  color: @window_fg_color;
+  border-top: 1px solid alpha(@border_color, 0.90);
+  border-bottom: none;
+  box-shadow: none;
+}

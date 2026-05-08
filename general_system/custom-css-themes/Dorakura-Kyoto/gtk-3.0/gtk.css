@@ -1,0 +1,16 @@
+/* Hand picked minimal GTK3 entrypoint for Dorakura-Kyoto 
+*** By GrandBIRDLizard *** */
+
+@import url("widgets/00-palette.css");
+
+@import url("widgets/99-dorakura-overrides.css");
+@import url("widgets/10-base-surfaces.css");
+@import url("widgets/20-buttons.css");
+@import url("widgets/30-entries.css");
+@import url("widgets/40-headerbar.css");
+@import url("widgets/50-menus.css");
+@import url("widgets/60-notebook.css");
+@import url("widgets/70-controls.css");
+@import url("widgets/80-lists-sidebar.css");
+@import url("widgets/90-app-nemo.css");
+@import url("widgets/95-popovers.css");

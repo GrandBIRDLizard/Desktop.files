@@ -1,0 +1,97 @@
+/* Dorakura-Kyoto :: 50-menus.css */
+/* Force Purple identity */
+/* By GrandBIRDLizard */
+
+/* Top app menubar (Nemo / classic GTK apps) */
+menubar,
+.menubar {
+  background-image: none;
+  background-color: @dorakura_chrome_bg;
+  color: @window_fg_color;
+  border-bottom: 1px solid alpha(@border_color, 0.85);
+}
+
+menubar > menuitem,
+.menubar > menuitem,
+menubar > .menuitem,
+.menubar > .menuitem {
+  background-image: none;
+  background-color: transparent;
+  color: @window_fg_color;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+menubar > menuitem:hover,
+.menubar > menuitem:hover,
+menubar > menuitem:prelight,
+.menubar > menuitem:prelight,
+menubar > .menuitem:hover,
+.menubar > .menuitem:hover,
+menubar > .menuitem:prelight,
+.menubar > .menuitem:prelight {
+  background-image: none;
+  background-color: alpha(@dorakura_highlight, 0.14);
+  color: @window_fg_color;
+  border-color: alpha(@border_color, 0.60);
+}
+
+/* Actual dropdown menus / context menus */
+menu,
+.menu {
+  background-image: none;
+  background-color: @dorakura_menu_bg;
+  color: @window_fg_color;
+  border: 1px solid alpha(@border_color, 0.95);
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+menuitem,
+.menuitem {
+  background-image: none;
+  background-color: transparent;
+  color: @window_fg_color;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+menuitem:hover,
+menuitem:prelight,
+.menuitem:hover,
+.menuitem:prelight {
+  background-image: none;
+  background-color: @dorakura_menu_hover;
+  color: #f8f8f2;
+  border-color: alpha(@accent_color, 0.30);
+}
+
+menuitem:disabled,
+.menuitem:disabled {
+  color: @insensitive_fg_color;
+}
+
+/* Separators inside menus */
+menu separator,
+.menu separator {
+  background-color: alpha(@border_color, 0.75);
+}
+
+/* Tooltips only */
+tooltip,
+.tooltip {
+  background-image: none;
+  background-color: @dorakura_menu_bg;
+  color: @theme_tooltip_fg_color;
+  border: 1px solid alpha(@border_color, 0.85);
+  border-radius: 6px;
+}
+
+/*
+ **NTS**
+ * IMPORTANT! *
+ * DO NOT theme popover/modelbutton globally here.
+ * That was causing invisible GNOME Screenshot / Firefox / GTK app menus.
+ */
