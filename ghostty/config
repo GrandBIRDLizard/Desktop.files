@@ -1,21 +1,26 @@
-####################################################
-##########GrandBIRDLizard's Ghostty Config##########
+###################################################j
+#########GrandBIRDLizard's Ghostty Config##########
 ####################################################
 #STARTOFCONFIGURATION
-#Appearance
 
 font-family = "JetBrains Mono"
 font-family = "Noto Sans Mono CJK JP"
 font-family = "Noto Sans CJK JP"
-font-size = 12
-theme = Urple
-#background-image =
-#background-image-opacity = 0.1
+font-size = 16
+cursor-style = block
+cursor-color = #32cd32
+theme = Atom One Dark 
+#background-image = 
+#background-image-opacity = 1.0
 #background-image-fit = cover
-background-blur = true
-background-opacity = 0.8
+background-blur = true 
+background-opacity = 0.90
 window-theme = ghostty
-title = Birds?
+title = "Until you're satisfied with your day, the night isn't over."
 window-decoration = true
 desktop-notifications = true
-bold-is-bright = true
+#custom-shader = ~/.config/ghostty/gsim-personal/
+custom-shader = ~/.config/ghostty/gsim-personal/Ramanujans-Pen.glsl
+#custom-shader = ~/.config/ghostty/ 
+custom-shader-animation = true
+confirm-close-surface = false

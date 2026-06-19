@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # Let X/DP/VRR settle after login
-sleep 1
 
 xrandr \
   --output DisplayPort-0 \
