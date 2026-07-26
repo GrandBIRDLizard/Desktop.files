@@ -1,26 +1,28 @@
 ###################################################j
 #########GrandBIRDLizard's Ghostty Config##########
 ####################################################
-#STARTOFCONFIGURATION
+# START OF CONFIGURATION
 
 font-family = "JetBrains Mono"
 font-family = "Noto Sans Mono CJK JP"
 font-family = "Noto Sans CJK JP"
 font-size = 16
-cursor-style = block
+cursor-style = block_hollow
 cursor-color = #32cd32
-theme = Atom One Dark 
-#background-image = 
-#background-image-opacity = 1.0
-#background-image-fit = cover
-background-blur = true 
-background-opacity = 0.90
-window-theme = ghostty
+theme = Aizen Dark 
+window-theme = ghostty 
 title = "Until you're satisfied with your day, the night isn't over."
 window-decoration = true
 desktop-notifications = true
-#custom-shader = ~/.config/ghostty/gsim-personal/
+background-blur = true
+#background-image = 
+#background-image-opacity = 0.5
+background-opacity = 0.95
 custom-shader = ~/.config/ghostty/gsim-personal/Ramanujans-Pen.glsl
-#custom-shader = ~/.config/ghostty/ 
-custom-shader-animation = true
+custom-shader = ~/.config/ghostty/gsim-personal/Durakuras-Hideout.glsl
+#custom-shader = ~/.config/ghostty/gsim-personal/bleed.glsl
+custom-shader = ~/.config/ghostty/gsim-personal/Spirit-Heart.glsl
+#custom-shader = "gsim/active.glsl"
+custom-shader-animation = always
 confirm-close-surface = false
+
