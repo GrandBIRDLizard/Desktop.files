@@ -1,20 +1,20 @@
 {
   "$schema": "/home/jmoney/.config/fastfetch/config.jsonc",
   "logo": {
-    "source": "~/.config/fastfetch/assets/Komib-w.png",
     "type": "kitty-direct",
+    "source": "/home/jmoney/.config/fastfetch//assets/ascii-CJK-Nazuna.png",
     "padding": {
-    	"top": 1,
-      "left": 6
+      "top": 1,
+      "left": 2,
+      "right": 4
     },
-    "width": 30,
-    "height": 30
+    "width": 35,
+    "height": 18
   },
   "display": {
     "separator": "  "
   },
   "modules": [
-    "break",
     {
       "type": "custom",
       "format": "╭─➤ 󱙣 HARDWARE 󱙣 ─────────────────────────────────────────────╮",
@@ -66,7 +66,6 @@
       "format": "  ╰───────────────────────────────────────────────────────────╯",
       "outputColor": "38;5;82"
     },
-    "break",
     {
       "type": "custom",
       "format": "╭─➤  SOFTWARE  ─────────────────────────────────────────────╮",
@@ -79,7 +78,7 @@
     },
     {
       "type": "os",
-      "key": "  ├ 󰣇 -",
+      "key": "  ├  -",
       "keyColor": "38;5;92",
       "outputColor": "38;5;34"
     },
@@ -97,13 +96,13 @@
     },
     {
       "type": "packages",
-      "key": "  ├ 󰮯 -",
+      "key": "  ├  -",
       "keyColor": "38;5;92",
       "outputColor": "38;5;34"
     },
     {
-      "type": "terminal-",
-      "key": "  ├  ",
+      "type": "terminal",
+      "key": "  ├ 󰊠 -",
       "keyColor": "38;5;92",
       "outputColor": "38;5;34"
     },
@@ -118,7 +117,6 @@
       "format": "  ╰───────────────────────────────────────────────────────────╯",
       "outputColor": "38;5;129"
     },
-    "break",
     {
       "type": "custom",
       "format": "╭─➤   CUSTOMIZATION  ───────────────────────────────────────╮",
