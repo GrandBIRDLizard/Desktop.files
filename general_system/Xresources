@@ -1,0 +1,44 @@
+! Dorakura-Kyoto- GTK theme by GrandBirdLizard for xterm
+!A Dracula / TokyoNight Purple forward Hybrid. 
+
+XTerm*faceName: Jetbrains Mono:size=14
+XTerm*pointerColor: #bb9af7
+XTerm*pointerColorBackground: #1a1b26
+
+! Background / Foreground
+XTerm*background: #1a1b26
+XTerm*foreground: #c0caf5
+! Selection
+XTerm*highlightColor: #7aa2f7
+XTerm*highlightTextColor: #1a1b26
+
+! Black
+XTerm*color0:  #15161e
+XTerm*color8:  #414868
+! Red
+XTerm*color1:  #f7768e
+XTerm*color9:  #ff7a93
+! Green
+XTerm*color2:  #9ece6a
+XTerm*color10: #b9f27c
+! Yellow
+XTerm*color3:  #e0af68
+XTerm*color11: #ffcb6b
+! Blue
+XTerm*color4:  #7aa2f7
+XTerm*color12: #82aaff
+! Magenta / Purple (emphasized)
+XTerm*color5:  #bb9af7
+XTerm*color13: #caa9fa
+! Cyan
+XTerm*color6:  #7dcfff
+XTerm*color14: #89ddff
+! White
+XTerm*color7:  #a9b1d6
+XTerm*color15: #c0caf5
+
+! Cursor
+XTerm*cursorColor: #bb9af7
+! Scrollbar
+XTerm*scrollBar: true
+XTerm*rightScrollBar: true
