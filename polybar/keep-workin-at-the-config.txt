@@ -1,0 +1,1 @@
+[grandlizard@HostWithTheMost polybar]$ polybar -l info mybar 2>&1 | grep -i -E 'font|pango|cuneiform' [grandlizard@HostWithTheMost polybar]$ fc-match "Noto Sans Cuneiform" NotoSansCuneiform-Regular.ttf: "Noto Sans Cuneiform" "Regular" [grandlizard@HostWithTheMost polybar]$ fc-match "JetBrains Mono NL" JetBrainsMonoNL-Regular.ttf: "JetBrains Mono NL" "Regular"
