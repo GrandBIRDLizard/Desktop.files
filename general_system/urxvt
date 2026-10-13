@@ -1,0 +1,62 @@
+! DoraKura URxvt
+
+! Enable 32-bit color for transparency
+URxvt*depth:                    32
+URxvt*buffered:                 true
+URxvt*saveLines:                10000
+URxvt*internalBorder:           8
+
+! Disable legacy scrollbar
+URxvt*scrollBar:                false
+
+! Fonts
+URxvt*font:                     xft:DejaVu Sans Mono:size=16:antialias=true:hinting=true
+URxvt*boldFont:                 xft:DejaVu Sans Mono:bold:size=16:antialias=true:hinting=true
+URxvt*italicFont:               xft:DejaVu Sans Mono:italic:size=16:antialias=true:hinting=true
+URxvt*boldItalicFont:           xft:DejaVu Sans Mono:bold:italic:size=16:antialias=true:hinting=true
+
+! Background (80% Opacity) / Foreground
+URxvt*background:               [80]#1a1b26
+URxvt*foreground:               #c0caf5
+
+! Cursor & Pointer
+URxvt*cursorColor:              #bb9af7
+URxvt*cursorColor2:             #1a1b26
+URxvt*pointerColor:             #bb9af7
+URxvt*pointerColorBackground:   #1a1b26
+
+! Selection / Highlight
+URxvt*highlightColor:           #7aa2f7
+URxvt*highlightTextColor:       #1a1b26
+
+! Black
+URxvt*color0:                   #15161e
+URxvt*color8:                   #414868
+
+! Red
+URxvt*color1:                   #f7768e
+URxvt*color9:                   #ff7a93
+
+! Green
+URxvt*color2:                   #9ece6a
+URxvt*color10:                  #b9f27c
+
+! Yellow
+URxvt*color3:                   #e0af68
+URxvt*color11:                  #ffcb6b
+
+! Blue
+URxvt*color4:                   #7aa2f7
+URxvt*color12:                  #82aaff
+
+! Magenta / Purple (Emphasized)
+URxvt*color5:                   #bb9af7
+URxvt*color13:                  #caa9fa
+
+! Cyan
+URxvt*color6:                   #7dcfff
+URxvt*color14:                  #89ddff
+
+! White
+URxvt*color7:                   #a9b1d6
+URxvt*color15:                  #c0caf5
