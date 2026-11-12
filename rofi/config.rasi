@@ -1,79 +1,9 @@
 configuration {
-    font: "JetBrainsMono Nl 12";
-    icon-theme: "Dracula Tela Circle Dark";
+    font: "URW Bookman Demi";
+    icon-theme: "bes-own-circle-red";
     show-icons:true;
     display-drun: "Search";
 }
 
-* {
-    black:      #636363; 
-    green:      #3e3f51;
 
-    background:                  @black;
-    foreground:                  @green;
-    border-color:                @green;
-
-    normal-background:           @black;
-    normal-foreground:           @green;
-    alternate-normal-background: @black;
-    alternate-normal-foreground: @green;
-
-    selected-normal-background:  @green;
-    selected-normal-foreground:  @black;
-
-    active-background:           @green;
-    active-foreground:           @black;
-    urgent-background:           @black;
-    urgent-foreground:           @green;
-}
-
-element normal.normal {
-    background-color: transparent;
-}
-
-element alternate.normal {
-    background-color: transparent;
-}
-
-window {
-    width: 37%;
-    height: 39%;
-    padding: 20px;
-    border:  2px;
-    border-radius: 10px;
-    border-color: @green;
-    background-color: #222222;
-    spacing: 5;
-}
-
-element-icon {
-    size: 3.0ch;
-    padding: 0px 0px 0px 0px; 
-}
-
-mainbox {
-    orientation: vertical;
-    children: [ inputbar, contentbox ];
-}
-
-contentbox {
-    orientation: horizontal;
-    children: [listview, entry-image ];
-}
-
-entry-image {
-    background-image: url("~/Pictures/Art/bwtry1.jpeg");
-}
-
-element {
-    padding: 4px;
-    border-radius: 4px;
-}
-
-element selected {
-    background-color: @green;
-    text-color: @background;
-}
-
-
-
+@theme "~/.local/share/themes/rofi/fullscreen.rasi"
