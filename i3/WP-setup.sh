@@ -1,4 +1,4 @@
-#!/bin/sh
-sleep 1
+#!/usr/bin/env bash
+sleep 2.0
 
-feh --bg-fill /home/jmoney/Pictures/Wallpapers/WP-s1.png /home/jmoney/Pictures/Wallpapers/WP-s2.png
+feh --bg-fill ~/Pictures/wallpapers/WP-s1.jpg ~/Pictures/wallpapers/WP-s2.png
