@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Terminate already running bar instances
+# kill inital bar
 killall -q polybar
 
-# Wait until the processes have been shut down
+# Wait for bar to fully shutdown
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 screens=$(xrandr --listactivemonitors | grep -v "Monitors" | cut -d" " -f6)
