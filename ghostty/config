@@ -4,25 +4,23 @@
 # START OF CONFIGURATION
 
 font-family = "JetBrains Mono"
-font-family = "Noto Sans Mono CJK JP"
-font-family = "Noto Sans CJK JP"
 font-size = 16
 cursor-style = block_hollow
-cursor-color = #32cd32
-theme = Aizen Dark 
-window-theme = ghostty 
+cursor-color = #FF0000 
+theme = Black Metal (Khold) 
+window-theme = dark 
 title = "Until you're satisfied with your day, the night isn't over."
-window-decoration = true
+window-decoration = none 
 desktop-notifications = true
-background-blur = true
+background-blur = false 
 #background-image = 
-#background-image-opacity = 0.5
-background-opacity = 0.95
-custom-shader = ~/.config/ghostty/gsim-personal/Ramanujans-Pen.glsl
-custom-shader = ~/.config/ghostty/gsim-personal/Durakuras-Hideout.glsl
-#custom-shader = ~/.config/ghostty/gsim-personal/bleed.glsl
-custom-shader = ~/.config/ghostty/gsim-personal/Spirit-Heart.glsl
-#custom-shader = "gsim/active.glsl"
-custom-shader-animation = always
+#background-image-opacity = 0.0
+background-opacity = 0.9
 confirm-close-surface = false
-
+custom-shader-animation = true
+#custom-shader = ~/Dev/Shaders/WIP/
+custom-shader = ~/Dev/Shaders/Ghostctl/shaders/Breath-in-Bloom.glsl
+custom-shader = ~/Dev/Shaders/WIP/
+custom-shader = ~/Dev/Shaders/Ghostctl/shaders/Heart-and-Shapes.glsl
+custom-shader =  ~/Dev/Shaders/Ghostctl/shaders/Ramanujans-Pen.glsl
+#custom-shader = ~/Dev/Shaders/Ghostctl/shaders/static.glsl
